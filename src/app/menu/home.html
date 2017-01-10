@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Title</title>
+    <!--<link href="/web/src/lib/bootstrap.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style type="text/css">
+        .navbar-brand > #logo1-img {
+            background-repeat: no-repeat;
+            background-position: 0 bottom;
+            background-image: url("../../../assets/logo1.jpg");
+            -webkit-background-size: cover;
+            background-size: cover;
+            height: 40px;
+            width: 40px;
+
+        }
+
+        .navbar-brand > #logo2-img {
+            background-repeat: no-repeat;
+            background-position: 0 bottom;
+            background-image: url("../../../assets/logo2.png");
+            -webkit-background-size: cover;
+            background-size: cover;
+            height: 40px;
+            width: 140px;
+
+        }
+
+        /*.navbar-right{*/
+        /*justify-content: flex-end;*/
+        /*}*/
+
+        .main-image {
+            position: relative;
+            top: 60px;
+            /*background-repeat: no-repeat;*/
+            /*background-position: 0 bottom;*/
+            /*background-image: url("../../../assets/main.jpg");*/
+            /*!*-webkit-background-size:cover;*!*/
+            /*!*background-size: cover;*!*/
+            /*height: 400px;*/
+            /*width: 100%;*/
+
+        }
+
+        .row-divied {
+            border-bottom: 1px solid #dddbda;
+            margin: 15px;
+        }
+
+        .row-grey-bg1 {
+            /*background-repeat:;*/
+            /*background-position: 0 bottom;*/
+            background-image: url("../../../assets/bg1.jpeg");
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+
+        .row-grey-bg2 {
+            /*background-repeat:;*/
+            /*background-position: 0 bottom;*/
+            background-image: url("../../../assets/bg2.jpeg");
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+
+        .card-main-item {
+            border-color: #333333 !important;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            border-radius: 0.5rem;
+            padding: 5px;
+            margin-bottom: 5px;
+            box-shadow: 3px 3px #333333;
+        }
+
+        .card-main-item:hover {
+            /*box-shadow:inset x-offset y-offset blur-radius spread-radius color*/
+            box-shadow: 3px 3px 0.25rem 0.25rem #d9534f;
+            cursor:pointer;
+        }
+
+        div[class|="card-img"] {
+            background-repeat: no-repeat;
+            background-position: 0 bottom;
+            background-image: url("../../../assets/doc.jpg");
+            -webkit-background-size: contain;
+            background-size: contain;
+            height: 100px;
+            width: 100px;
+        }
+        .card-columns-desc {
+            column-count:2!important;
+        }
+        .card-columns-desc > .card{
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<div class="container-fluid">
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <div id="logo1-img" class="d-inline-block align-top"></div>
+            <div id="logo2-img" class="d-inline-block align-top"></div>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active float-lg-right">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DOC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DEMO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOGIN</a>
+                </li>
+                <li class="nav-item   float-lg-right">
+                    <a class="nav-link" href="#">SEARCH</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid main-image">
+    <!--<div id="main-image">-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+    <!--1 of 3-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+    <!--1 of 3-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+    <!--1 of 3-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <div class="row justify-content-center row-divied row-grey-bg1" style="margin-top: 15px;">
+        <div class="col" align="center">
+            <image src="./../../../assets/main.jpg" class="img-fluid" alt="Responsive image"/>
+        </div>
+    </div>
+    <div class="row row-divied">
+        <div class="card-columns card-columns-desc">
+            <div class="card card-inverse">
+                <div class="card-block col p-2">
+                    <h4>火锅</h4>
+                    <p>不管什么样的素材，不需要多好的厨艺，小店也可，奢华也罢，即使是在家中，和家人一起也能享受舌尖上的快乐</p>
+                </div>
+            </div>
+            <div class="card card-inverse">
+                <div class="card-block col p-2">
+                    <h4>码农火锅</h4>
+                    <p>不管什么样的技术，不需要教科书般的严谨，心得也好，Dem也好，不管是初学者，还是技术大拿，希望在这都能找到一份收获</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-divied">
+        <div class="col">
+            <div class="card card-main-item">
+                <div class="card-img-top" alt="Documents">
+
+                </div>
+                <div class="card-block">
+                    <h4>心得体会</h4>
+                    <p>逛一逛，看一看，评一评</p>
+                </div>
+                <div class="card-footer">
+                    <small>最后更新：2017／01／09 23：00</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-main-item">
+                <div class="card-img-top" alt="Documents">
+
+                </div>
+                <div class="card-block">
+                    <h4>笔记记录</h4>
+                    <p>好好学习，天天向上</p>
+                </div>
+                <div class="card-footer">
+                    <small>最后更新：2017／01／09 23：00</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-main-item">
+                <div class="card-img-top" alt="Documents">
+
+                </div>
+                <div class="card-block">
+                    <h4>DEMO展示</h4>
+                    <p>秀一秀</p>
+                </div>
+                <div class="card-footer">
+                    <small>最后更新：2017／01／09 23：00</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-main-item">
+                <div class="card-img-top" alt="Documents">
+
+                </div>
+                <div class="card-block">
+                    <h4>12人 = 1500</h4>
+                    <p>你懂的</p>
+                </div>
+                <div class="card-footer">
+                    <small>最后更新：2017／01／09 23：00</small>
+                </div>
+            </div>
+        </div>
+        <!--<div class="card">-->
+        <!--<img class="card-img-top" src="../../../assets/doc.png" alt="Documents"/>-->
+        <!--<div class="card-block">-->
+        <!--<h4>Document Sharing</h4>-->
+        <!--<p>ssfadfasfsadfsfd</p>-->
+        <!--<a class="btn btn-danger" href="#">Click to enter</a>-->
+        <!--</div>-->
+        <!--<div class="card-footer">-->
+        <!--<small>this is now</small>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="card">-->
+        <!--<img class="card-img-top" src="../../../assets/doc.png" alt="Documents"/>-->
+        <!--<div class="card-block">-->
+        <!--<h4>Document Sharing</h4>-->
+        <!--<p>ssfadfasfsadfsfd</p>-->
+        <!--<a class="btn btn-danger" href="#">Click to enter</a>-->
+        <!--</div>-->
+        <!--<div class="card-footer">-->
+        <!--<small>this is now</small>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="row">
+        <div class="col">
+
+        </div>
+
+    </div>
+    <!--//#292b2c-->
+
+
+    <!--<div class="row">-->
+    <!--<div class="col-md-3">-->
+    <!--1 of 3-->
+    <!--</div>-->
+    <!--<div class="col-md-6">-->
+    <!--2 of 3 (wider)-->
+    <!--</div>-->
+    <!--<div class="col-md-3">-->
+    <!--3 of 3-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col">-->
+    <!--1 of 3-->
+    <!--</div>-->
+    <!--<div class="w-100"/>-->
+    <!--<div class="col">-->
+    <!--2 of 3 (wider)-->
+    <!--</div>-->
+    <!--<div class="col">-->
+    <!--3 of 3-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Stack the columns on mobile by making one full-width and the other half-width &ndash;&gt;-->
+    <!--<div class="row">-->
+    <!--<div class="col col-md-8">.col .col-md-8</div>-->
+    <!--<div class="col-6 col-md-4">.col-6 .col-md-4</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop &ndash;&gt;-->
+    <!--<div class="row">-->
+    <!--<div class="col-6 col-md-4">.col-6 .col-md-4</div>-->
+    <!--<div class="col-6 col-md-4">.col-6 .col-md-4</div>-->
+    <!--<div class="col-6 col-md-4">.col-6 .col-md-4</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Columns are always 50% wide, on mobile and desktop &ndash;&gt;-->
+    <!--<div class="row">-->
+    <!--<div class="col-6">.col-6</div>-->
+    <!--<div class="col-6">.col-6</div>-->
+    <!--</div>-->
+</div>
+
+
+</body>
+</html>
